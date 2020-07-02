@@ -1,0 +1,19 @@
+.authorization {
+    display: flex;
+    min-height: 90vh;
+    width: 100%;
+}
+.authorization form {
+    width: 330px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
+.authorization input {
+    height: 45px;
+}
+.authorization button {
+    width: auto;
+    margin: 20px auto;
+
+}

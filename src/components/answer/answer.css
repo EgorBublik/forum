@@ -1,0 +1,13 @@
+.answer {
+    background-color: white;
+    border: 1px solid gainsboro;
+    margin: 20px auto;
+}
+.answer textarea {
+    width: 96%;
+    margin: 15px 0 10px 15px;
+}
+.answer button{
+    width: auto;
+    margin: 0 0 10px 20px;
+}

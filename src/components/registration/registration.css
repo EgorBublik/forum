@@ -1,0 +1,12 @@
+.registration {
+    margin: 20px auto;
+}
+
+.registration h1 {
+    text-align: center;
+}
+
+.registration button {
+    width: auto;
+    margin: 20px auto;
+}

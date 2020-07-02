@@ -1,0 +1,9 @@
+.new-question {
+    margin-top: 20px
+}
+.new-question-input {
+    min-height: 4em;
+    width: 100%;
+    padding: 5px;
+}
+
