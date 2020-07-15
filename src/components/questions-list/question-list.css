@@ -1,19 +1,22 @@
-.question-people {
+.question-list {
     margin-top: 30px;
 }
-.question-people ul {
+.question-list ul {
     border: 1px solid gainsboro;
     padding: 0;
 }
-.question-people li {
+.question-list li {
     background-color: white;
     list-style-type: none;
     padding: 10px;
     border-bottom: 1px solid gainsboro;
     font-size: 25px;
 }
-.question-people li:hover {
+.question-list li:hover {
     cursor: pointer;
     text-decoration: underline;
     padding: 15px;
+}
+.question-list ul a{
+    color: black;
 }

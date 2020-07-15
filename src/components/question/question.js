@@ -1,14 +1,14 @@
-import React, {Component} from 'react';
-import './question.css'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
-class Question extends Component {
-    render() {
-        return (
-            <div className='question'>
-                Вопрос 1
-            </div>
-        );
-    }
+const Question = (props) => {
+
+   const {question} = props;
+
+   console.log(question);
+    return (
+        <Link to='/question'><li>{question.question}</li></Link>
+    );
 }
 
 export default Question;

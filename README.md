@@ -52,7 +52,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
   - [Writing Tests](#writing-tests)
   - [Testing Components](#testing-components)
   - [Using Third Party Assertion Libraries](#using-third-party-assertion-libraries)
-  - [Initializing Test Environment](#initializing-test-environment)
+  - [Initializing Question Environment](#initializing-test-environment)
   - [Focusing and Excluding Tests](#focusing-and-excluding-tests)
   - [Coverage Reporting](#coverage-reporting)
   - [Continuous Integration](#continuous-integration)
@@ -119,7 +119,7 @@ my-app/
   src/
     App.css
     App.js
-    App.test.js
+    App.questions-list.js
     index.css
     libs.js
     logo.svg
@@ -907,12 +907,12 @@ We recommend that you use a separate tool for browser end-to-end tests if you ne
 Jest will look for test files with any of the following popular naming conventions:
 
 * Files with `.js` suffix in `__tests__` folders.
-* Files with `.test.js` suffix.
+* Files with `.questions-list.js` suffix.
 * Files with `.spec.js` suffix.
 
-The `.test.js` / `.spec.js` files (or the `__tests__` folders) can be located at any depth under the `src` top level folder.
+The `.questions-list.js` / `.spec.js` files (or the `__tests__` folders) can be located at any depth under the `src` top level folder.
 
-We recommend to put the test files (or `__tests__` folders) next to the code they are testing so that relative imports appear shorter. For example, if `App.test.js` and `App.js` are in the same folder, the test just needs to `import App from './App'` instead of a long relative path. Colocation also helps find tests more quickly in larger projects.
+We recommend to put the test files (or `__tests__` folders) next to the code they are testing so that relative imports appear shorter. For example, if `App.questions-list.js` and `App.js` are in the same folder, the test just needs to `import App from './App'` instead of a long relative path. Colocation also helps find tests more quickly in larger projects.
 
 ### Command Line Interface
 
@@ -965,7 +965,7 @@ it('renders without crashing', () => {
 });
 ```
 
-This test mounts a component and makes sure that it didn’t throw during rendering. Tests like this provide a lot value with very little effort so they are great as a starting point, and this is the test you will find in `src/App.test.js`.
+This test mounts a component and makes sure that it didn’t throw during rendering. Tests like this provide a lot value with very little effort so they are great as a starting point, and this is the test you will find in `src/App.questions-list.js`.
 
 When you encounter bugs caused by changing components, you will gain a deeper insight into which parts of them are worth testing in your application. This might be a good time to introduce more specific tests asserting specific expected output or behavior.
 
@@ -1038,7 +1038,7 @@ import { expect } from 'chai';
 
 and then use them in your tests like you normally do.
 
-### Initializing Test Environment
+### Initializing Question Environment
 
 >Note: this feature is available with `react-scripts@0.4.0` and higher.
 
@@ -1135,7 +1135,7 @@ By default, the `package.json` of the generated project looks like this:
   // ...
   "scripts": {
     // ...
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts question --env=jsdom"
   }
 ```
 

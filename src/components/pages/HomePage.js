@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import NewQuestion from "../new-question";
-import QuestionPeople from "../question-people";
+import QuestionsList from "../questions-list";
 
 class HomePage extends Component {
     render() {
         return (
             <div>
                 <NewQuestion/>
-                <QuestionPeople/>
+                <QuestionsList/>
             </div>
         );
     }
