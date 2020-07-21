@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 export const getAll = async () => {
-    const res = await axios.get(`http://0.0.0.0:3005/questions/`);
+    const res = await axios.get(process.env.REACT_APP_URL_BACK);
     return res.data;
 };
-
