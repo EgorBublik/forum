@@ -4,7 +4,9 @@ import Registration from "../registration";
 class RegistrationPage extends Component {
     render() {
         return (
-            <Registration/>
+            <div>
+                <Registration/>
+            </div>
         );
     }
 }

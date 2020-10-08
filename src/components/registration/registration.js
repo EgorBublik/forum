@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './registration.css'
+import AddPetBtn from "../add-pet-btn";
 
 class Registration extends Component {
     render() {
@@ -11,7 +12,7 @@ class Registration extends Component {
                         <div className="row">
                             <div className="col-md-6 mb-3">
                                 <label htmlFor="firstName">First name</label>
-                                <input type="text" className="form-control" id="firstName" placeholder="" value=""
+                                <input type="text" className="form-control" id="firstName" placeholder=""
                                        required=""/>
                                 <div className="invalid-feedback">
                                     Valid first name is required.
@@ -19,7 +20,7 @@ class Registration extends Component {
                             </div>
                             <div className="col-md-6 mb-3">
                                 <label htmlFor="lastName">Last name</label>
-                                <input type="text" className="form-control" id="lastName" placeholder="" value=""
+                                <input type="text" className="form-control" id="lastName" placeholder=""
                                        required=""/>
                                 <div className="invalid-feedback">
                                     Valid last name is required.
@@ -48,16 +49,18 @@ class Registration extends Component {
                         </div>
 
                         <div className="mb-3">
+                            <label>Password</label>
+                            <input type="password" className="form-control" id="password" placeholder="Belarus"
+                                   required=""/>
+                        </div>
+
+                        <div className="mb-3">
                             <label>Country</label>
                             <input type="text" className="form-control" id="сountry" placeholder="Belarus"
                                    required=""/>
                         </div>
 
-                        <div className="mb-3">
-                            <label>Password</label>
-                            <input type="password" className="form-control" id="password" placeholder="Belarus"
-                                   required=""/>
-                        </div>
+                        <AddPetBtn/>
 
                         <button className="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout
                         </button>
