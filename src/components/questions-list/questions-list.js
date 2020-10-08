@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import Question from "../question";
 import {getAll} from "../../services/database";
 import './question-list.css';
-// import {Link} from "react-router-dom";
 
 const QuestionsList = () => {
     const [questions, setQuestions] = useState([]);
@@ -11,7 +10,6 @@ const QuestionsList = () => {
         async function fetchData() {
             const data = await getAll();
             setQuestions(data.questions);
-            console.log(data.questions);
         }
 
         fetchData();
@@ -23,9 +21,13 @@ const QuestionsList = () => {
                 <h1>Вопросы участников</h1>
             </div>
             <ul>
-                {questions.map(question => (
-                    <Question question={question}/>
-                ))}
+                {questions.map(function (question1, index) {
+                        return (
+                            <Question key={index} question={question1}/>
+                        )
+                    }
+                )
+                }
             </ul>
         </div>
     );
