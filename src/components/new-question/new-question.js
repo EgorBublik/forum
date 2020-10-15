@@ -2,6 +2,7 @@ import React from 'react';
 import './new-question.css';
 import {postAll} from "../../services/database";
 
+
 export default class NewQuestion extends React.Component {
 
     constructor(props) {
@@ -16,7 +17,6 @@ export default class NewQuestion extends React.Component {
     }
 
     handleSubmit(event) {
-        // event.preventDefault();
         postAll({question: this.state.value});
     }
 

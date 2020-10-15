@@ -10,3 +10,7 @@
     width: auto;
     margin: 20px auto;
 }
+.error {
+    padding-top: 10px;
+    color: red;
+}
