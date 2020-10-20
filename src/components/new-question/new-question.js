@@ -18,6 +18,7 @@ export default class NewQuestion extends React.Component {
 
     handleSubmit(event) {
         postAll({question: this.state.value});
+        event.preventDefault();
     }
 
     render() {
